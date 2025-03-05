@@ -159,6 +159,52 @@ h6 {
 }
 
 
+@media(max-width: 767px){
+    .top-header {
+        height: 15px;
+    }
+
+    .top-header-items {
+        height: 15px;
+    }
+
+    .top-header-item a {
+        font-size: 10px;
+    }
+
+    .top-header-item .dropdown .dropdown-toggle {
+        font-size: 10px;
+    }
+
+    .logo-banner-section {
+        padding: 10px 0;
+    }
+
+    .logo-banner-title h2 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .logo-banner-title h3 {
+        font-size: 1rem;
+    }
+
+    .sau-logo {
+        height: 40px;
+        margin-top: 5px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .saarc-logo {
+        height: 60px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 /* Navigation Menu */
 .navigation-section {
     background-color: var(--dark-blue);
@@ -357,6 +403,17 @@ h6 {
     position: relative;
 }
 
+.blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 63, 141, 0.732);
+    z-index: -1;
+}
+
+
 .university-achievements::after {
     content: '';
     position: absolute;
@@ -364,7 +421,7 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(13, 13, 37, 0.799);
+    background-color: rgba(13, 13, 37, 0.632);
     z-index: -1;
 }
 
