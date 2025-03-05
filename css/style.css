@@ -1,0 +1,335 @@
+/* Color Variables */
+:root {
+    --light-gray: #E3E3E3;
+    --dark-blue: #00408D;
+    --navy-blue: #0D0D25;
+    --golden-yellow: #F1C40F;
+}
+
+/* Global Styles */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    font-family: "Roboto", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0 0 5px; /* Consistent spacing */
+    line-height: 1.2;
+}
+
+
+/* Utilities */
+.m-left-auto{
+    margin-left: auto;
+}
+
+.m-left{
+    margin-left: 1rem;
+}
+
+
+/* Section top-header */
+
+.top-header{
+    min-height: 30px;
+    width: 100%;
+    background-color: var(--light-gray);
+}
+
+.top-header-items{
+    min-height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.top-header-item{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.top-header-item .dropdown:hover{
+    background-color: transparent;
+    border: none;
+}
+
+.top-header-item .dropdown.open{
+    background-color: transparent !important;
+}
+
+.top-header-item .dropdown .dropdown-toggle{
+    background-color: transparent;
+    border: none;
+    color: var(--navy-blue);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+.top-header-item .dropdown .dropdown-menu{
+    border-bottom: 4px solid var(--golden-yellow);
+    border-radius: 0;
+    margin-top: 10px;
+    padding: 0;
+    min-width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-header-item a{
+    color: var(--navy-blue);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.top-header-item-border{
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: var(--golden-yellow);
+    margin-left: 10px;
+}
+
+.top-header-social-icons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header-social-icons a{
+    color: var(--navy-blue);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Logo Banner Section */
+
+.logo-banner-section{
+    padding: 20px 0;
+    /* text-align: center; */
+}
+
+.sau-logo{
+    height: 60px;
+    margin-top: 5px;
+}
+
+.saarc-logo{
+    height: 80px;
+    float: right;
+}
+
+.logo-banner-title{
+    text-align: center;
+}
+
+.logo-banner-title h2{
+    font-size: 2.5rem;
+    color: var(--navy-blue);
+}
+
+.logo-banner-title h3{
+    font-size: 1.5rem;
+    color: var(--navy-blue);
+}
+
+
+/* Navigation Menu */
+.navigation-section {
+    background-color: var(--dark-blue);
+}
+
+.navbar-default {
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: var(--light-gray) !important;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: var(--dark-blue);
+    border-bottom: 3px solid var(--golden-yellow);
+}
+
+.dropdown-large {
+    position: static !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: transparent;
+    border-bottom: 3px solid var(--golden-yellow);
+}
+
+/* .dropdown-large:hover .dropdown-menu{
+    display: block;
+} */
+
+
+.dropdown-menu-large {
+    min-width: 80%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 4px solid var(--dark-blue);
+    color: var(--light-gray);
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mega-menu-content .dropdown-header {
+    color: var(--navy-blue);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.mega-menu-content ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mega-menu-content ul li a {
+    color: var(--dark-blue);
+    font-weight: bold;
+    padding: 5px 0;
+    display: block;
+}
+
+.mega-menu-content ul li i{
+    color: var(--golden-yellow);
+}
+
+.mega-menu-content ul li a:hover {
+    color: var(--golden-yellow);
+    text-decoration: none;
+}
+
+.mega-menu-content .row div:not(:last-child){
+    border-right: 2px solid var(--light-gray);
+}
+
+@media(max-width: 767px){
+    .navbar-nav .open .dropdown-menu{
+        background-color: #ffffff;
+    }
+
+    .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a{
+        padding: 10px 0 0 0;
+    }
+}
+
+/* Image carousel section */
+.image-and-apply{
+    position: relative;
+    height: 450px;
+}
+
+.hero-cta-button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-cta-button .btn-group{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-cta-button .btn-group a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    min-width: 200px;
+    color: var(--light-gray);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--dark-blue);
+}
+
+.hero-cta-button .btn-group a:nth-child(1){
+    background-color: var(--dark-blue);
+}
+
+.hero-cta-button .btn-group a:nth-child(2){
+    background-color: var(--navy-blue);
+}
+
+.hero-cta-button .btn-group a:nth-child(3){
+    background-color: var(--golden-yellow);
+}
+
+#hero-carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#hero-carousel .carousel-inner .item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 13, 37, 0.59);
+}
+
+#hero-carousel .carousel-inner .item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    bottom: 20%;
+}
+
+.carousel-caption h3{
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--light-gray);
+}
+
+
+@media(max-width: 864px){
+    .image-and-apply{
+        position: relative;
+        height: 100%;
+        max-height: 250px;
+    }
+
+    .hero-cta-button{
+        display: none;
+    }
+}
+
+
+/* Announcement Section */
