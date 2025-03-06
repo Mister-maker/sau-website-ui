@@ -173,6 +173,40 @@ p {
     color: var(--dark-blue);
 }
 
+.read-more-icon {
+    color: var(--navy-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more-icon:hover {
+    text-decoration: none;
+}
+
+.read-more-icon:hover span{
+    background-color: var(--golden-yellow);
+}
+
+.read-more-icon span{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
 /* Section top-header */
 
 .top-header {
@@ -607,12 +641,50 @@ p {
     padding-top: 0;
 }
 
+.programs-section .nav-tabs {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: none;
+}
+
+.programs-section .nav-tabs li {
+    border: none;
+    border-radius: 14px 14px 14px 14px !important;
+
+}
+
+.programs-section .nav-tabs li.active a {
+    background-color: var(--golden-yellow);
+    color: var(--white);
+}
+
+.programs-section .nav-tabs li:hover a {
+    background-color: var(--golden-yellow);
+    color: var(--white);
+}
+
+.programs-section .nav-tabs li a {
+    border: none;
+    color: var(--dark-gray);
+    font-weight: bold !important;
+    padding: 10px 30px;
+    border-radius: 14px 14px 14px 14px !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
 .programs-section .tab-pane {
     padding-top: 20px;
 }
 
 .programs-section .swiper-container {
-    padding: 20px 0;
+    padding: 30px 0 60px 0;
+    position: relative;
     overflow: hidden;
 }
 
@@ -620,6 +692,14 @@ p {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.programs-section .swiper-pagination{
+    bottom: 20px;
+}
+
+.programs-section .swiper-pagination-bullet-active{
+    background-color: var(--dark-blue);
 }
 
 .programs-section .card {
