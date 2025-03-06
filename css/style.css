@@ -680,6 +680,7 @@ p {
 
 .programs-section .tab-pane {
     padding-top: 20px;
+    position: relative;
 }
 
 .programs-section .swiper-container {
@@ -700,6 +701,36 @@ p {
 
 .programs-section .swiper-pagination-bullet-active{
     background-color: var(--dark-blue);
+}
+
+.programs-section .swiper-button-prev{
+    top: 0;
+    left: 90%;
+}
+
+.programs-section .swiper-button-next{
+    top: 0;
+    left: 96%;
+    color: var(--white) !important;
+    background-color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.programs-section .swiper-button-prev{
+    top: 0;
+    left: 92%;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.programs-section .swiper-button-next::after,
+.programs-section .swiper-button-prev::after {
+    display: none;
 }
 
 .programs-section .card {
