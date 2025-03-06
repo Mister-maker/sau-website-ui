@@ -762,6 +762,142 @@ p {
     color: #004aad;
 }
 
+/* Event section */
+.event-section {
+    padding: 80px 0;
+    background-color: var(--navy-blue);
+}
+
+/* Research Section */
+.research-section {
+    padding: 80px 0;
+}
+
+.research-section .nav-tabs {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: none;
+}
+
+.research-section .nav-tabs li {
+    border: none;
+    border-radius: 14px 14px 14px 14px !important;
+
+}
+
+.research-section .nav-tabs li.active a {
+    background-color: var(--golden-yellow);
+    color: var(--white);
+}
+
+.research-section .nav-tabs li:hover a {
+    background-color: var(--golden-yellow);
+    color: var(--white);
+}
+
+.research-section .nav-tabs li a {
+    border: none;
+    color: var(--dark-gray);
+    font-weight: bold !important;
+    padding: 10px 30px;
+    border-radius: 14px 14px 14px 14px !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.research-section .tab-pane {
+    padding-top: 20px;
+    position: relative;
+}
+
+.research-section .swiper-container {
+    padding: 30px 0 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.research-section .swiper-slide {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.research-section .swiper-pagination{
+    bottom: 20px;
+}
+
+.research-section .swiper-pagination-bullet-active{
+    background-color: var(--dark-blue);
+}
+
+.research-section .swiper-button-prev{
+    top: 0;
+    left: 90%;
+}
+
+.research-section .swiper-button-next{
+    top: 0;
+    left: 96%;
+    color: var(--white) !important;
+    background-color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.research-section .swiper-button-prev{
+    top: 0;
+    left: 92%;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.research-section .swiper-button-next::after,
+.research-section .swiper-button-prev::after {
+    display: none;
+}
+
+.research-section .card {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.research-section .card-caption{
+    padding: 0 0 0 1.5rem;
+}
+
+.research-section .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.research-section .card h4 {
+    font-weight: bold;
+    /* margin-top: 10px; */
+    color: var(--navy-blue);
+}
+
+.research-section .card p {
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+.research-section .swiper-button-next,
+.swiper-button-prev {
+    color: #004aad;
+}
+
 
 /* University Achievements Section Styles */
 .university-achievements {
