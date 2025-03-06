@@ -1,6 +1,8 @@
 /* Color Variables */
 :root {
+    --white: #ffffff;
     --light-gray: #E3E3E3;
+    --dark-gray: #6A6A6A;
     --dark-blue: #00408D;
     --navy-blue: #0D0D25;
     --golden-yellow: #F1C40F;
@@ -35,6 +37,24 @@ h6 {
     line-height: 1.2;
 }
 
+.primary-heading {
+    color: var(--navy-blue);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.primary-heading span {
+    color: var(--golden-yellow);
+}
+
+p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--navy-blue);
+}
+
 
 /* Utilities */
 .m-left-auto {
@@ -45,8 +65,112 @@ h6 {
     margin-left: 1rem;
 }
 
-.m-top{
+.m-top {
     margin-top: 1rem;
+}
+
+
+.text-xs {
+    font-size: 0.75rem;
+    /* 12px */
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    /* 14px */
+}
+
+.text-base {
+    font-size: 1rem;
+    /* 16px */
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    /* 18px */
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    /* 20px */
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    /* 24px */
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    /* 30px */
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    /* 36px */
+}
+
+.text-5xl {
+    font-size: 3rem;
+    /* 48px */
+}
+
+.text-6xl {
+    font-size: 3.75rem;
+    /* 60px */
+}
+
+.text-7xl {
+    font-size: 4.5rem;
+    /* 72px */
+}
+
+.text-8xl {
+    font-size: 6rem;
+    /* 96px */
+}
+
+.text-9xl {
+    font-size: 8rem;
+    /* 128px */
+}
+
+.text-dark-grey{
+    color: var(--dark-gray);
+}
+
+.text-navy-blue{
+    color: var(--navy-blue);
+}
+
+.text-golden-yellow{
+    color: var(--golden-yellow);
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.text-light-gray{
+    color: var(--light-gray);
+}
+
+/* Buttons and Links */
+.read-more {
+    color: var(--golden-yellow);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    text-decoration: none;
+    color: var(--dark-blue);
 }
 
 /* Section top-header */
@@ -159,7 +283,7 @@ h6 {
 }
 
 
-@media(max-width: 767px){
+@media(max-width: 767px) {
     .top-header {
         height: 15px;
     }
@@ -184,7 +308,7 @@ h6 {
         font-size: 1.2rem;
         margin-bottom: 5px;
     }
-    
+
     .logo-banner-title h3 {
         font-size: 1rem;
     }
@@ -196,7 +320,7 @@ h6 {
         margin: 0 auto;
         margin-bottom: 10px;
     }
-    
+
     .saarc-logo {
         height: 60px;
         float: none;
@@ -324,7 +448,7 @@ h6 {
     align-items: center;
     min-height: 60px;
     min-width: 200px;
-    color: var(--light-gray);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -395,6 +519,139 @@ h6 {
 
 
 
+/* President Message Section */
+.president-message-section {
+    padding: 80px 0;
+    /* min-height: 700px; */
+    position: relative;
+}
+
+.president-image-container {
+    position: relative;
+    min-height: 600px;
+}
+
+.president-message-container {
+    position: relative;
+    min-height: 600px;
+}
+
+.president-image {
+    width: 90%;
+    border-radius: 14px;
+    position: absolute;
+    right: -30px;
+}
+
+.president-message {
+    position: absolute;
+    width: 90%;
+    top: 40px;
+    left: -30px;
+    min-height: 82%;
+    padding: 2rem 3rem;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+.pr-left-illustrations {
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    height: 50%;
+    transform: translateY(-50%);
+}
+
+.pr-right-illustrations {
+    position: absolute;
+    right: 30px;
+    top: 20%;
+    height: 50%;
+}
+
+@media(max-width: 992px) {
+    .president-image-container {
+        position: static;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .pr-right-illustrations {
+        display: none;
+    }
+
+    .pr-left-illustrations {
+        display: none;
+    }
+
+    .president-image {
+        position: static;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .president-message {
+        position: static;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: -10%;
+    }
+}
+
+/* Programs Section */
+.programs-section {
+    padding: 80px 0;
+    padding-top: 0;
+}
+
+.programs-section .tab-pane {
+    padding-top: 20px;
+}
+
+.programs-section .swiper-container {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.programs-section .swiper-slide {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.programs-section .card {
+    /* padding: 15px; */
+}
+
+.programs-section .card-caption{
+    padding: 1.5rem;
+}
+
+.programs-section .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.programs-section .card h4 {
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--navy-blue);
+}
+
+.programs-section .card p {
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+.programs-section .swiper-button-next,
+.swiper-button-prev {
+    color: #004aad;
+}
+
+
 /* University Achievements Section Styles */
 .university-achievements {
     padding: 80px 0 50px 0;
@@ -403,7 +660,7 @@ h6 {
     position: relative;
 }
 
-.blur{
+.blur {
     position: absolute;
     top: 0;
     left: 0;
@@ -463,6 +720,7 @@ h6 {
 .achievement-item:hover {
     transform: scale(1.05);
 }
+
 .achievement-item .icon {
     font-size: 48px;
     margin: 0 auto;
@@ -475,17 +733,20 @@ h6 {
     color: var(--light-gray);
     background-color: rgba(13, 13, 37, 0.892);
     border-radius: 50%;
-    box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.1),0px 30px 45px -30px rgba(50,50,93,0.25);
+    box-shadow: 0px 18px 36px -18px rgba(0, 0, 0, 0.1), 0px 30px 45px -30px rgba(50, 50, 93, 0.25);
 }
+
 .achievement-item h3 {
     font-size: 18px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 .achievement-item p {
     color: #bdc3c7;
     font-size: 14px;
 }
+
 @media (max-width: 768px) {
     .achievement-item {
         margin-bottom: 20px;
@@ -544,7 +805,7 @@ hr {
     font-size: 2rem;
 }
 
-.socials a{
+.socials a {
     color: var(--light-gray);
 }
 
@@ -631,7 +892,7 @@ hr {
     color: var(--golden-yellow);
 }
 
-.footer__sau-logo{
+.footer__sau-logo {
     height: 160px;
     width: 100px;
 }

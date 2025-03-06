@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -205,22 +206,107 @@
     <!-- End of slider section -->
 
     <!-- Announcements Slider -->
-
-
-
-
-    <!-- End announcement-carousel -->
+        -------------------
+    <!-- End of Announcements Slider -->
 
 
     <!-- President message -->
-    <section class="president-message">
+    <section class="president-message-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    test test
+                    <div class="president-image-container">
+                        <img src="images/pr-left.png" class="pr-left-illustrations" alt="">
+                        <img src="images/president-sir.jpg" class="president-image" alt="">
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    test test
+                    <div class="president-message-container">
+                        <div class="president-message">
+                            <h2 class="primary-heading text-4xl">Message by SAU <span>President</span></h2>
+                            <p class="text-2xl">It gives me immense pleasure to share with you some developments and achievements that have marked a period of growth and excellence for South Asian University. As an institution built on the foundation of regional cooperation and academic excellence, we continue to thrive, thanks to the confidence and support of the SAARC member states.</p>
+                            <p class="text-2xl">Our journey is one of collaboration and shared vision, and the commitment of SAARC member states is a testament to the trust they place in us. Their continuous support empowers us to reach new heights in education, research and innovation. We remain dedicated to upholding this confidence by delivering quality education and fostering an environment that promotes regional harmony and development.</p>
+                            <p class="text-2xl">We are proud to announce the successful conduct of the SAARC-wide entrance test.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                        <img src="images/pr-right.png" class="pr-right-illustrations" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principle Section End -->
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="container">
+            <h2 class="primary-heading text-5xl text-center">Our <span>Programs</span></h2>
+            <p class="text-center text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
+        
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#phd">PhD Programs</a></li>
+                <li><a data-toggle="tab" href="#pg">PG Programs</a></li>
+                <li><a data-toggle="tab" href="#ug">UG Programs</a></li>
+                <li><a data-toggle="tab" href="#virtual">Virtual Campus</a></li>
+            </ul>
+        
+            <!-- Tabs Content -->
+            <div class="tab-content">
+                <div id="phd" class="tab-pane fade in active">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="images/students.jpg" alt="Program">
+                                    <div class="card-caption">
+                                        <h4>BTech CSE/ Dual Degree BTech</h4>
+                                        <p>Discussed bilateral cooperation and launched the Climate Centre website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="images/students.jpg" alt="Program">
+                                    <div class="card-caption">
+                                        <h4>BTech CSE/ Dual Degree BTech</h4>
+                                        <p>Discussed bilateral cooperation and launched the Climate Centre website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="images/students.jpg" alt="Program">
+                                    <div class="card-caption">
+                                        <h4>BTech CSE/ Dual Degree BTech</h4>
+                                        <p>Discussed bilateral cooperation and launched the Climate Centre website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="images/students.jpg" alt="Program">
+                                    <div class="card-caption">
+                                        <h4>BTech CSE/ Dual Degree BTech</h4>
+                                        <p>Discussed bilateral cooperation and launched the Climate Centre website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div id="pg" class="tab-pane fade">
+                    <p>PG Programs content goes here...</p>
+                </div>
+                <div id="ug" class="tab-pane fade">
+                    <p>UG Programs content goes here...</p>
+                </div>
+                <div id="virtual" class="tab-pane fade">
+                    <p>Virtual Campus content goes here...</p>
                 </div>
             </div>
         </div>
@@ -378,5 +464,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: { slidesPerView: 3 },
+                480: { slidesPerView: 1 }
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            infinite: true,
+        });
+    </script>
 </body>
 </html>
