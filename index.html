@@ -164,21 +164,21 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg" alt="Slide 1">
+                    <img src="https://sau.int/wp-content/uploads/2025/02/mahamood-shougee-visit-scaled.jpg" alt="Slide 1">
                     <div class="carousel-caption">
-                        <h3>Hello world</h3>
+                        <h3>Distinguished Lecture -President SAU & Chief Guest, Dr. Mahamood Shougee Maldives</h3>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg" alt="Slide 2">
+                    <img src="https://sau.int/wp-content/uploads/2025/02/mahamood-shougee-visit-scaled.jpg" alt="Slide 2">
                     <div class="carousel-caption">
-                        <h3>Hello world</h3>
+                        <h3>Distinguished Lecture -President SAU & Chief Guest, Dr. Mahamood Shougee Maldives</h3>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg" alt="Slide 3">
+                    <img src="https://sau.int/wp-content/uploads/2025/02/mahamood-shougee-visit-scaled.jpg" alt="Slide 3">
                     <div class="carousel-caption">
-                        <h3>Hello world</h3>
+                        <h3>Distinguished Lecture -President SAU & Chief Guest, Dr. Mahamood Shougee Maldives</h3>
                     </div>
                 </div>
             </div>
@@ -593,7 +593,7 @@
     <!-- SAU video section -->
     <section class="sau-video-section">
         <div class="container">
-            <h2 class="primary-heading text-5xl text-center text-white">Our <span>Research</span></h2>
+            <h2 class="primary-heading text-5xl text-center text-white">Our <span>Campus</span></h2>
             <p class="text-center text-light-gray">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
             <a href="#" class="view-all">View All &nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             <div class="row">
@@ -660,6 +660,63 @@
         <div class="container">
             <h2 class="primary-heading text-5xl text-center">Our <span>Testimonial</span></h2>
             <p class="text-center text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
+            
+            <div class="testimonial-wrapper">
+                <div class="testimonial-main fade-slide testimonial-show" id="testimonial-content">
+                    <div class="testimonial-info">
+                        <img src="images/sua-campus.jpg" alt="">
+                        <h3 class="text-5xl">Shaurya Bahl</h3>
+                        <p class="text-3xl">B.Tech CSE</p>
+                    </div>
+                    <div class="testimonial-details">
+                        <h3 class="text-5xl">Going to UTM Malaysia For Spring 2025 semester Exchange Abroad</h3>
+                        <p class="text-3xl">I'm super excited about starting my internship at Coventry University in the UK . All thanks to Northcap University for giving me this incredible opportunity! I get to work on cool game design projects and travel around the country. Plus, I'll meet lots of new people from different places. Can't wait to dive in and make the most of this awesome experience!</p>
+                    </div>
+                </div>
+                <div class="testimonial-sidebar">
+                    <div class="testimonial-card" 
+                         data-title="Going to UTM Malaysia For Spring 2025 semester Exchange Abroad"
+                         data-content="Embarking on the UTM semester exchange program fills me with immense excitement..."
+                         data-name="Shaurya Bahl"
+                         data-course="B.Tech CSE"
+                         data-image="images/sua-campus.jpg"
+                         onclick="showTestimonial(this)">
+                        <img src="images/sua-campus.jpg" alt="">
+                        <div>
+                            <strong>Shaurya Bahl</strong>
+                            <p>B.Tech CSE</p>
+                        </div>
+                    </div>
+            
+                    <div class="testimonial-card" 
+                         data-title="My Internship Experience at Google"
+                         data-content="Working at Google has been a life-changing experience, providing me with hands-on exposure..."
+                         data-name="John Doe"
+                         data-course="B.Tech IT"
+                         data-image="images/students.jpg"
+                         onclick="showTestimonial(this)">
+                        <img src="images/students.jpg" alt="">
+                        <div>
+                            <strong>John Doe</strong>
+                            <p>B.Tech IT</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" 
+                         data-title="My Internship Experience at Google"
+                         data-content="Working at Google has been a life-changing experience, providing me with hands-on exposure..."
+                         data-name="John Doe"
+                         data-course="B.Tech IT"
+                         data-image="images/event-bg.jpg"
+                         onclick="showTestimonial(this)">
+                        <img src="images/event-bg.jpg" alt="">
+                        <div>
+                            <strong>John Doe</strong>
+                            <p>B.Tech IT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -839,6 +896,103 @@
             },
             infinite: true,
         });
+    </script>
+
+    <script>
+        function showTestimonial(element) {
+            let img = element.getAttribute('data-image');
+            let title = element.getAttribute('data-title');
+            let content = element.getAttribute('data-content');
+            let name = element.getAttribute('data-name');
+            let course = element.getAttribute('data-course');
+            let testimonialContent = document.getElementById('testimonial-content');
+
+            document.getElementById('testimonial-content').innerHTML = `
+                <div class="testimonial-info">
+                    <img src="${img}" alt="">
+                    <h3 class="text-5xl">${name}</h3>
+                    <p class="text-3xl">${course}</p>
+                </div>
+                <div class="testimonial-details">
+                    <h3 class="text-5xl">${title}</h3>
+                    <p class="text-3xl">${content}</p>
+                </div>
+            `;
+
+            // Add fade-slide class for animation effect
+            testimonialContent.classList.remove('testimonial-show');
+
+            // Wait for animation to finish before changing content
+            setTimeout(() => {
+                testimonialContent.innerHTML = `
+                    <div class="testimonial-info">
+                        <img src="${img}" alt="">
+                        <h3 class="text-5xl">${name}</h3>
+                        <p class="text-3xl">${course}</p>
+                    </div>
+                    <div class="testimonial-details">
+                        <h3 class="text-5xl">${title}</h3>
+                        <p class="text-3xl">${content}</p>
+                    </div>
+                `;
+                testimonialContent.classList.add('testimonial-show');
+            }, 300); // Delay matches CSS transition time (0.5s)
+        }
+    </script>
+
+    <script>
+        let currentTestimonialIndex = 0;
+        let testimonials = document.querySelectorAll(".testimonial-card");
+        let testimonialContent = document.getElementById("testimonial-content");
+        let autoSlideInterval;
+        let restartTimeout;
+
+        function showTestimonial(element) {
+            let img = element.getAttribute('data-image');
+            let title = element.getAttribute("data-title");
+            let content = element.getAttribute("data-content");
+            let name = element.getAttribute("data-name");
+            let course = element.getAttribute("data-course");
+
+            // Remove animation before changing content
+            testimonialContent.classList.remove("testimonial-show");
+
+            // Wait before changing the content
+            setTimeout(() => {
+                testimonialContent.innerHTML = `
+                    <div class="testimonial-info">
+                        <img src="${img}" alt="">
+                        <h3 class="text-5xl">${name}</h3>
+                        <p class="text-3xl">${course}</p>
+                    </div>
+                    <div class="testimonial-details">
+                        <h3 class="text-5xl">${title}</h3>
+                        <p class="text-3xl">${content}</p>
+                    </div>
+                `;
+                testimonialContent.classList.add("testimonial-show");
+            }, 300);
+
+            // Reset Auto-Slide Timer
+            clearInterval(autoSlideInterval);
+            clearTimeout(restartTimeout);
+            restartTimeout = setTimeout(startAutoSlide, 10000); // Restart after 10s
+        }
+
+        // Function to automatically switch testimonials
+        function autoSlideTestimonials() {
+            currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+            showTestimonial(testimonials[currentTestimonialIndex]);
+        }
+
+        // Start the auto-slide feature
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(autoSlideTestimonials, 5000); // Change every 5s
+        }
+
+        // Initialize auto-slide when page loads
+        startAutoSlide();
+
     </script>
 </body>
 </html>
