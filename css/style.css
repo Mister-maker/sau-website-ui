@@ -211,6 +211,25 @@ p {
     transition: all 0.3s ease-in-out;
 }
 
+.view-all {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    float: right;
+}
+
+.view-all:hover {
+    text-decoration: none;
+    color: var(--golden-yellow);
+}
+
+
 /* Section top-header */
 
 .top-header {
@@ -777,20 +796,31 @@ p {
     color: var(--navy-blue);
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
+
+
+
 
 .event-caption{
     padding: 1rem;
 }
 
 .event-image-date{
+    overflow: hidden;
     position: relative;
 }
 
 .event-card img{
     width: 100%;
+    transition: all 300ms ease-in-out;
     border-radius: 8px 8px 0 0;
 }
+
+.event-card:hover img{
+    transform: scale(1.2);
+}
+
 .event-date {
     background: var(--navy-blue);
     color: white;
@@ -840,7 +870,7 @@ p {
 }
 .event-item {
     margin-bottom: 15px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #313131;
     padding-bottom: 10px;
 }
 .event-item h4 {
@@ -982,6 +1012,93 @@ p {
 .swiper-button-prev {
     color: #004aad;
 }
+
+/* SAU Video section */
+.sau-video-section{
+    padding: 80px 0;
+    background-color: var(--dark-blue);
+}
+
+.sau-video-card{
+
+}
+
+.sau-video-card h4{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.video-card-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.sau-video-card img{
+    width: 100%;
+    transition: transform 300ms ease-in-out;
+    margin-bottom: 15px;
+}
+
+.video-play-button {
+    font-size: 10rem;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white);
+    z-index: 1;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(25, 15, 76, 0.503);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau-video-card:hover .video-play-button {
+    opacity: 1;
+}
+
+.sau-video-card:hover img {
+    transform: scale(1.2);
+}
+
+.sau-video-section .swiper-container{
+    overflow: hidden;
+    padding: 4rem 0;
+}
+
+.sau-video-section .swiper-pagination-bullet-active{
+    background-color: var(--white);
+}
+
+.sau-video-section .swiper-button-next{
+    right: -40px;
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.sau-video-section .swiper-button-prev{
+    left: -40px;
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.sau-video-section .swiper-button-next::after,
+.sau-video-section .swiper-button-prev::after {
+    display: none;
+}
+
+
+/* Testimonial Section */
+.testimonial-section{
+    padding: 80px 0;
+}
+
 
 
 /* University Achievements Section Styles */
