@@ -876,7 +876,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 40,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -887,7 +887,8 @@
                 clickable: true,
             },
             breakpoints: {
-                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
                 480: { slidesPerView: 1 }
             },
             autoplay: {

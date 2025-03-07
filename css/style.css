@@ -340,13 +340,11 @@ p {
 }
 
 
-@media(max-width: 767px) {
-    .top-header {
-        height: 15px;
-    }
+@media(max-width: 764px) {
 
     .top-header-items {
         height: 15px;
+        flex-wrap: wrap;
     }
 
     .top-header-item a {
@@ -386,6 +384,11 @@ p {
     }
 }
 
+@media(max-width: 616px) {
+    .top-header{
+        height: 40px;
+    }
+}
 /* Navigation Menu */
 .navigation-section {
     background-color: var(--dark-blue);
@@ -638,6 +641,14 @@ p {
         min-height: 100%;
     }
 
+    .president-message-container {
+        position: static;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 100%;
+        margin-bottom: 60px;
+    }
+
     .pr-right-illustrations {
         display: none;
     }
@@ -701,6 +712,27 @@ p {
     border-radius: 14px 14px 14px 14px !important;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+}
+
+@media(max-width: 758px) {
+    .programs-section .nav-tabs{
+        gap: 0;
+    }
+    .programs-section .nav-tabs li a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    
+    .programs-section .swiper-button-prev{
+        top: 15px !important;
+        left: 82% !important;
+    }
+
+    .programs-section .swiper-button-next{
+        top: 15px !important;
+        left: 90% !important;
+    }
+
 }
 
 .programs-section .tab-pane {
@@ -1019,6 +1051,28 @@ p {
 .swiper-button-prev {
     color: #004aad;
 }
+
+@media(max-width: 758px) {
+    .research-section .nav-tabs{
+        gap: 0;
+    }
+    .research-section .nav-tabs li a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    
+    .research-section .swiper-button-prev{
+        top: 15px !important;
+        left: 80% !important;
+    }
+
+    .research-section .swiper-button-next{
+        top: 15px !important;
+        left: 90% !important;
+    }
+
+}
+
 
 /* SAU Video section */
 .sau-video-section{
