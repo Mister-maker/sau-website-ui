@@ -255,7 +255,7 @@
             <!-- Tabs Content -->
             <div class="tab-content">
                 <div id="phd" class="tab-pane fade in active">
-                    <div class="swiper-container">
+                    <div class="swiper-container programs-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
@@ -304,7 +304,7 @@
                     <div class="swiper-button-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                 </div>
                 <div id="pg" class="tab-pane fade">
-                    <div class="swiper-container">
+                    <div class="swiper-container programs-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
@@ -353,7 +353,7 @@
                     <div class="swiper-button-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                 </div>
                 <div id="ug" class="tab-pane fade">
-                    <div class="swiper-container">
+                    <div class="swiper-container programs-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
@@ -402,7 +402,7 @@
                     <div class="swiper-button-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                 </div>
                 <div id="virtual" class="tab-pane fade">
-                    <div class="swiper-container">
+                    <div class="swiper-container programs-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
@@ -460,37 +460,65 @@
     <section class="event-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8" style="border-right: 2px solid var(--golden-yellow);">
+                <div class="col-md-8 event-border">
                     <h2 class="primary-heading text-white text-4xl">Faculty <span>Events</span></h2>
                     <p class="text-light-gray m-bottom">Faculty program of faculty</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="event-card">
-                                <div class="event-image-date">
-                                    <img src="images/students.jpg" alt="Event">
-                                    <div class="event-date">05<br>Mar 2025</div>
+                    <div class="swiper-container" id="event-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="event-card">
+                                    <div class="event-image-date">
+                                        <img src="images/students.jpg" alt="Event">
+                                        <div class="event-date">05<br>Mar 2025</div>
+                                    </div>
+                                    <div class="event-caption">
+                                        <h4>Prof KK Aggarwal, President SAU, and Mr Praveen Kumar, MD DFCCIL</h4>
+                                        <p class="text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
+                                    </div>
+                                    <a href="#" class="event-btn yellow">LEARN MORE</a>
                                 </div>
-                                <div class="event-caption">
-                                    <h4>Prof KK Aggarwal, President SAU, and Mr Praveen Kumar, MD DFCCIL</h4>
-                                    <p class="text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-card">
+                                    <div class="event-image-date">
+                                        <img src="images/students.jpg" alt="Event">
+                                        <div class="event-date">05<br>Mar 2025</div>
+                                    </div>
+                                    <div class="event-caption">
+                                        <h4>Prof KK Aggarwal, President SAU, and Mr Praveen Kumar, MD DFCCIL</h4>
+                                        <p class="text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
+                                    </div>
+                                    <a href="#" class="event-btn blue">LEARN MORE</a>
                                 </div>
-                                <a href="#" class="event-btn yellow">LEARN MORE</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-card">
+                                    <div class="event-image-date">
+                                        <img src="images/students.jpg" alt="Event">
+                                        <div class="event-date">05<br>Mar 2025</div>
+                                    </div>
+                                    <div class="event-caption">
+                                        <h4>Prof KK Aggarwal, President SAU, and Mr Praveen Kumar, MD DFCCIL</h4>
+                                        <p class="text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
+                                    </div>
+                                    <a href="#" class="event-btn yellow">LEARN MORE</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-card">
+                                    <div class="event-image-date">
+                                        <img src="images/students.jpg" alt="Event">
+                                        <div class="event-date">05<br>Mar 2025</div>
+                                    </div>
+                                    <div class="event-caption">
+                                        <h4>Prof KK Aggarwal, President SAU, and Mr Praveen Kumar, MD DFCCIL</h4>
+                                        <p class="text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
+                                    </div>
+                                    <a href="#" class="event-btn blue">LEARN MORE</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="event-card">
-                                <div class="event-image-date">
-                                    <img src="images/students.jpg" alt="Event">
-                                    <div class="event-date">05<br>Mar 2025</div>
-                                </div>
-                                <div class="event-caption">
-                                    <h4>Prof KK Aggarwal, President SAU, and Mr Praveen Kumar, MD DFCCIL</h4>
-                                    <p class="text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
-                                </div>
-                                <a href="#" class="event-btn blue">LEARN MORE</a>
-                            </div>
-                        </div>
-                        
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -537,7 +565,7 @@
             <p class="text-center text-dark-grey">Discussed bilateral cooperation and jointly launched the website of SAU's Climate Centre on 4th January 2025.</p>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="swiper-container">
+                    <div class="swiper-container" id="research-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
@@ -598,7 +626,7 @@
             <a href="#" class="view-all">View All &nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="swiper-container">
+                    <div class="swiper-container" id="sau-video-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="sau-video-card">
@@ -874,126 +902,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 40,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-                pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                1024: { slidesPerView: 3 },
-                768: { slidesPerView: 2 },
-                480: { slidesPerView: 1 }
-            },
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-            infinite: true,
-        });
-    </script>
-
-    <script>
-        function showTestimonial(element) {
-            let img = element.getAttribute('data-image');
-            let title = element.getAttribute('data-title');
-            let content = element.getAttribute('data-content');
-            let name = element.getAttribute('data-name');
-            let course = element.getAttribute('data-course');
-            let testimonialContent = document.getElementById('testimonial-content');
-
-            document.getElementById('testimonial-content').innerHTML = `
-                <div class="testimonial-info">
-                    <img src="${img}" alt="">
-                    <h3 class="text-5xl">${name}</h3>
-                    <p class="text-3xl">${course}</p>
-                </div>
-                <div class="testimonial-details">
-                    <h3 class="text-5xl">${title}</h3>
-                    <p class="text-3xl">${content}</p>
-                </div>
-            `;
-
-            // Add fade-slide class for animation effect
-            testimonialContent.classList.remove('testimonial-show');
-
-            // Wait for animation to finish before changing content
-            setTimeout(() => {
-                testimonialContent.innerHTML = `
-                    <div class="testimonial-info">
-                        <img src="${img}" alt="">
-                        <h3 class="text-5xl">${name}</h3>
-                        <p class="text-3xl">${course}</p>
-                    </div>
-                    <div class="testimonial-details">
-                        <h3 class="text-5xl">${title}</h3>
-                        <p class="text-3xl">${content}</p>
-                    </div>
-                `;
-                testimonialContent.classList.add('testimonial-show');
-            }, 300); // Delay matches CSS transition time (0.5s)
-        }
-    </script>
-
-    <script>
-        let currentTestimonialIndex = 0;
-        let testimonials = document.querySelectorAll(".testimonial-card");
-        let testimonialContent = document.getElementById("testimonial-content");
-        let autoSlideInterval;
-        let restartTimeout;
-
-        function showTestimonial(element) {
-            let img = element.getAttribute('data-image');
-            let title = element.getAttribute("data-title");
-            let content = element.getAttribute("data-content");
-            let name = element.getAttribute("data-name");
-            let course = element.getAttribute("data-course");
-
-            // Remove animation before changing content
-            testimonialContent.classList.remove("testimonial-show");
-
-            // Wait before changing the content
-            setTimeout(() => {
-                testimonialContent.innerHTML = `
-                    <div class="testimonial-info">
-                        <img src="${img}" alt="">
-                        <h3 class="text-5xl">${name}</h3>
-                        <p class="text-3xl">${course}</p>
-                    </div>
-                    <div class="testimonial-details">
-                        <h3 class="text-5xl">${title}</h3>
-                        <p class="text-3xl">${content}</p>
-                    </div>
-                `;
-                testimonialContent.classList.add("testimonial-show");
-            }, 300);
-
-            // Reset Auto-Slide Timer
-            clearInterval(autoSlideInterval);
-            clearTimeout(restartTimeout);
-            restartTimeout = setTimeout(startAutoSlide, 10000); // Restart after 10s
-        }
-
-        // Function to automatically switch testimonials
-        function autoSlideTestimonials() {
-            currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
-            showTestimonial(testimonials[currentTestimonialIndex]);
-        }
-
-        // Start the auto-slide feature
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(autoSlideTestimonials, 5000); // Change every 5s
-        }
-
-        // Initialize auto-slide when page loads
-        startAutoSlide();
-
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
