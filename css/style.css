@@ -6,6 +6,7 @@
     --dark-blue: #00408D;
     --navy-blue: #0D0D25;
     --golden-yellow: #F1C40F;
+    --yellow-green: #299a49;
 }
 
 /* Global Styles */
@@ -238,17 +239,26 @@ p {
     color: var(--golden-yellow);
 }
 
+.new-badge{
+    background-color: var(--yellow-green);
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
 
 /* Section top-header */
 
 .top-header {
-    min-height: 30px;
+    min-height: 25px;
     width: 100%;
     background-color: var(--dark-blue);
 }
 
 .top-header-items {
-    min-height: 30px;
+    min-height: 25px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -320,17 +330,17 @@ p {
 /* Logo Banner Section */
 
 .logo-banner-section {
-    padding: 20px 0;
+    padding: 2px 0;
     /* text-align: center; */
 }
 
 .sau-logo {
-    height: 60px;
+    height: 40px;
     margin-top: 5px;
 }
 
 .saarc-logo {
-    height: 80px;
+    height: 55px;
     float: right;
 }
 
@@ -339,12 +349,14 @@ p {
 }
 
 .logo-banner-title h2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 5px;
     color: var(--navy-blue);
 }
 
 .logo-banner-title h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--navy-blue);
 }
 
@@ -398,6 +410,42 @@ p {
         height: 40px;
     }
 }
+
+/* Mobile logo section */
+.mobile-logo-banner-section{
+    display: none;
+}
+
+.mobile-logo-wrapper{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.mobile-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-logo img{
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media(max-width: 764px) {
+    .mobile-logo-banner-section{
+        display: block;
+    }
+
+    .logo-banner-section{
+        display: none;
+    }
+}
+
 /* Navigation Menu */
 .navigation-section {
     background-color: var(--light-gray);
@@ -586,13 +634,106 @@ p {
 
 
 /* Announcement Section */
+.announcement-section {
+    padding: 30px 0;
+}
 
+.announce-heading {
+    height: 100%;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
 
+.announce-heading h3 {
+    margin-bottom: 0;
+}
+
+.announcement-slider{
+    padding: 0 0 0 0 !important;
+}
+
+.announcements-slider-wrapper{
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    color: var(--navy-blue);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: 85%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.announce-card h4{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.announcements-slider-wrapper .swiper-button-next{
+    top: 70%;
+    left: 92%;
+    color: var(--white) !important;
+    background-color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.announcements-slider-wrapper .swiper-button-prev{
+    top: 70%;
+    left: 86%;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.announcements-slider-wrapper .swiper-button-next::after,
+.announcements-slider-wrapper .swiper-button-prev::after {
+    display: none;
+}
+
+@media(max-width: 992px) {
+    .announcement-section{
+        padding: 20px 0;
+    }
+
+    /* .announcements-slider-wrapper{
+        width: 100%;
+    } */
+    .announce-heading{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 554px){
+    .announcements-slider-wrapper{
+        width: 100%;
+    }
+
+    .announcements-slider-wrapper .swiper-button-next{
+        /* top: 180% !important; 
+        left: 50%; */
+        display: none;
+    }
+
+    .announcements-slider-wrapper .swiper-button-prev{
+        /* top: 180% !important; 
+        left: 40%; */
+        display: none;
+    }
+}
 
 
 /* President Message Section */
 .president-message-section {
-    padding: 80px 0 0 0;
+    padding: 30px 0 0 0;
     /* min-height: 700px; */
     position: relative;
 }
@@ -1375,7 +1516,7 @@ p {
 
 /* University Achievements Section Styles */
 .university-achievements {
-    padding: 80px 0 50px 0;
+    padding: 50px 0 20px 0;
     color: #fff;
     /* text-align: center; */
     position: relative;
@@ -1415,64 +1556,6 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-}
-
-.achievement-item {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 15px;
-    transition: transform 0.3s ease;
-    width: 95%;
-    border-radius: 8px;
-    z-index: 2;
-    position: relative;
-}
-
-.achievement-item::after {
-    content: '';
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background-color: rgba(13, 13, 37, 0.618);
-    z-index: -1;
-}
-
-.achievement-item:hover {
-    transform: scale(1.05);
-}
-
-.achievement-item .icon {
-    font-size: 48px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--light-gray);
-    background-color: rgba(13, 13, 37, 0.892);
-    border-radius: 50%;
-    box-shadow: 0px 18px 36px -18px rgba(0, 0, 0, 0.1), 0px 30px 45px -30px rgba(50, 50, 93, 0.25);
-}
-
-.achievement-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.achievement-item p {
-    color: #bdc3c7;
-    font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    .achievement-item {
-        margin-bottom: 20px;
-    }
 }
 
  /* ================================== */
@@ -1666,7 +1749,7 @@ hr {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.2px;
-    color: var(--dark-blue);
+    color: var(--light-gray);
     text-decoration: none;
 }
 

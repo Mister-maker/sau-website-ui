@@ -3,62 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Section</title>
+    <title>Notification Slider</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .achievement-card {
-            display: flex;
-        }
+        .announcement-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-        .achievement-card .icon {
-            transition: .2s ease-in-out;
-            border-radius: 100px;
-            width: 110px;
-            height: 110px;
-            flex-basis: 110px;
-            margin-right: 5px;
-            background: rgba(12,14,15,.35);
-            text-align: center;
-        }
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
 
-        .achievement-card .icon img {
-            width: 100%;
-            height: 100%;
-            border-radius: 100px;
-        }
+.slider {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
-        .achievement-card .achievement-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            font-weight: 500;
-            font-size: 1.8rem;
-            height: 112px;
-            margin-top: -1px;
-            position: relative;
-            background: rgba(12,14,15,.325);
-        }
+.announcement-box {
+    width: 500px;
+    overflow: hidden;
+}
 
-        .achievement-card .achievement-title::before{
-            content: "";
-            background: url(./images/circle.png) left center/cover no-repeat;
-            height: 112px;
-            width: 50px;
-            position: absolute;
-            top: 0;
-            left: -50px;
-        }
+.announcement-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.announcement {
+    min-width: 500px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+}
+
+.new-badge {
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.nav-btn {
+    background: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #ddd;
+}
     </style>
 </head>
 <body>
-    <div class="achievement-card">
-        <div class="icon">
-            <img src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-photo-icon-image_1128397.jpg" alt="">
-        </div>
-        <div class="achievement-title">
-            <p class="text">Ranked as the best private <br> University in Haryana</p>
+    <div class="announcement-container">
+        <h3 class="title">Latest Announcements</h3>
+        <div class="slider">
+            <button id="prevBtn" class="nav-btn">◀</button>
+            <div class="announcement-box">
+                <div class="announcement-track">
+                    <div class="announcement">
+                        <span class="new-badge">New</span>
+                        <p>Declaration of Successful L-1 Bidder for Bid no. GEM/2025/B/5878833</p>
+                    </div>
+                    <div class="announcement">
+                        <span class="new-badge">New</span>
+                        <p>Important Update: System Maintenance on March 10, 2025</p>
+                    </div>
+                    <div class="announcement">
+                        <span class="new-badge">New</span>
+                        <p>Upcoming Webinar: Enhancing Cybersecurity Measures - Register Now!</p>
+                    </div>
+                </div>
+            </div>
+            <button id="nextBtn" class="nav-btn">▶</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const track = document.querySelector(".announcement-track");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+
+            let index = 0;
+
+            nextBtn.addEventListener("click", function () {
+                if (index < track.children.length - 1) {
+                    index++;
+                    updateSlider();
+                }
+            });
+
+            prevBtn.addEventListener("click", function () {
+                if (index > 0) {
+                    index--;
+                    updateSlider();
+                }
+            });
+
+            function updateSlider() {
+                track.style.transform = `translateX(-${index * 500}px)`;
+            }
+        });
+    </script>
 </body>
 </html>

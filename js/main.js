@@ -1,3 +1,25 @@
+// Announcement Slider Section
+var swiper = new Swiper('#announcement-slider', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '#announcement-swiper-button-next',
+        prevEl: '#announcement-swiper-button-prev',
+    },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1024: { slidesPerView: 1 },
+        480: { slidesPerView: 1 }
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+});
+
 // Programs slider section
 var swiper = new Swiper('.programs-slider', {
     slidesPerView: 1,
