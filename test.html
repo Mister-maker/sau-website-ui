@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .achievement-card {
+            display: flex;
+        }
+
+        .achievement-card .icon {
+            transition: .2s ease-in-out;
+            border-radius: 100px;
+            width: 110px;
+            height: 110px;
+            flex-basis: 110px;
+            margin-right: 5px;
+            background: rgba(12,14,15,.35);
+            text-align: center;
+        }
+
+        .achievement-card .icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100px;
+        }
+
+        .achievement-card .achievement-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.8rem;
+            height: 112px;
+            margin-top: -1px;
+            position: relative;
+            background: rgba(12,14,15,.325);
+        }
+
+        .achievement-card .achievement-title::before{
+            content: "";
+            background: url(./images/circle.png) left center/cover no-repeat;
+            height: 112px;
+            width: 50px;
+            position: absolute;
+            top: 0;
+            left: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="achievement-card">
+        <div class="icon">
+            <img src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-photo-icon-image_1128397.jpg" alt="">
+        </div>
+        <div class="achievement-title">
+            <p class="text">Ranked as the best private <br> University in Haryana</p>
+        </div>
+    </div>
+</body>
+</html>
