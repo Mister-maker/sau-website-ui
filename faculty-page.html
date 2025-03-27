@@ -201,18 +201,18 @@
         <a href="#" class="department-link department-mde">DEPARTMENT OF Science</a>
     </section>  
 
-    <nav class="fixed-tabs">
-        <a href="#">About the Department</a>
-        <a href="#">Programmes</a>
-        <a href="#">People</a>
-        <a href="#">Research</a>
-        <a href="#">Event</a>
-        <a href="#" class="highlight">Facilities</a>
-        <a href="#">Alumni</a>
-        <a href="#">Achievements</a>
+    <nav class="fixed-tabs" id="fixed-tabs">
+        <a href="#about-section">About the Department</a>
+        <a href="#program-section">Programmes</a>
+        <a href="#faculty-member-section">Faculty</a>
+        <a href="#research-section">Research</a>
+        <a href="#event-section">Event</a>
+        <a href="#facilities-section" class="highlight">Facilities</a>
+        <a href="#alumni-section">Alumni</a>
+        <a href="#achievements-section">Achievements</a>
     </nav>
 
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <div class="about-container">
             <div class="about-image">
                 <img src="images/students.jpg" alt="About Us">
@@ -236,7 +236,7 @@
         </div>
     </section>
 
-    <section class="programs-section" style="padding: 50px 0; background-color: #f5f5f5;">
+    <section class="programs-section" id="program-section" style="padding: 50px 0; background-color: #f5f5f5;">
         <div class="container">
             <h2 class="primary-heading text-5xl text-center">Our <span>Programs</span></h2>
             <div id="phd" class="tab-pane fade in active">
@@ -291,7 +291,7 @@
         </div>
     </section>
 
-    <section class="faculty-member-section">
+    <section class="faculty-member-section" id="faculty-member-section">
         <div class="container">
             <h2 class="primary-heading text-5xl text-center">Faculty<span> Members</span></h2>
             <div class="swiper-container" id="faculty-member-slider">
@@ -368,46 +368,353 @@
         </div>
     </section>
 
-    <section class="research-container container">
-        <h2 class="primary-heading text-5xl text-center">Our<span> Research</span></h2>
-        <div class="row">
-            <!-- PhD Scholars -->
-            <div class="col-md-3 col-sm-6">
-                <div class="research-card">
-                    <img src="./images/faculty/phd.jpg" alt="">
-                    <h4>PhD Scholars</h4>
-                    <p>Over 50+ scholars actively engaged in cutting-edge research across various domains.</p>
+    <section class="research-container" id="research-section">
+        <h2 class="primary-heading text-5xl text-center text-white">Our<span> Research</span></h2>
+        <div class="container" style="margin-top: 30px;">
+            <div class="row">
+                <!-- PhD Scholars -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="research-card">
+                        <img src="./images/faculty/phd.jpg" alt="">
+                        <h4>PhD Scholars</h4>
+                        <p>Over 50+ scholars actively engaged in cutting-edge research across various domains.</p>
+                    </div>
+                </div>
+                <!-- Publications -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="research-card">
+                        <img src="./images/faculty/publication.jpg" alt="">
+                        <h4>Publications</h4>
+                        <p>More than 200+ research papers published in renowned international journals.</p>
+                    </div>
+                </div>
+                <!-- Projects -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="research-card">
+                        <img src="./images/faculty/project.jpg" alt="">
+                        <h4>Projects</h4>
+                        <p>Innovative projects funded by national and international organizations.</p>
+                    </div>
+                </div>
+                <!-- Patents -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="research-card">
+                        <img src="./images/faculty/patent.jpg" alt="">
+                        <h4>Patents</h4>
+                        <p>Several patents filed and granted for groundbreaking research and innovation.</p>
+                    </div>
                 </div>
             </div>
-            <!-- Publications -->
-            <div class="col-md-3 col-sm-6">
-                <div class="research-card">
-                    <img src="./images/faculty/publication.jpg" alt="">
-                    <h4>Publications</h4>
-                    <p>More than 200+ research papers published in renowned international journals.</p>
+        </div> 
+    </section>
+
+    <section class="faculty-events-section" id="event-section">
+        <div class="container">
+            <h2 class="primary-heading text-5xl text-center">Our <span>Events</span></h2>
+            <div class="swiper-container" id="faculty-events-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="faculty-event-card">
+                            <!-- Date Box -->
+                            <div class="date-box">
+                                <div class="date">06</div>
+                                <div class="month-year">
+                                    <span>FEB</span><br>
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                        
+                            <!-- Event Details -->
+                            <div class="event-details">
+                                <h4>Global Trial Placement Strategies</h4>
+                                <p class="location">NASHVILLE 2018</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        
+                            <!-- Learn More Button -->
+                            <div class="button-container">
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="faculty-event-card">
+                            <!-- Date Box -->
+                            <div class="date-box">
+                                <div class="date">06</div>
+                                <div class="month-year">
+                                    <span>FEB</span><br>
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                        
+                            <!-- Event Details -->
+                            <div class="event-details">
+                                <h4>Global Trial Placement Strategies</h4>
+                                <p class="location">NASHVILLE 2018</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        
+                            <!-- Learn More Button -->
+                            <div class="button-container">
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="faculty-event-card">
+                            <!-- Date Box -->
+                            <div class="date-box">
+                                <div class="date">06</div>
+                                <div class="month-year">
+                                    <span>FEB</span><br>
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                        
+                            <!-- Event Details -->
+                            <div class="event-details">
+                                <h4>Global Trial Placement Strategies</h4>
+                                <p class="location">NASHVILLE 2018</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        
+                            <!-- Learn More Button -->
+                            <div class="button-container">
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- Projects -->
-            <div class="col-md-3 col-sm-6">
-                <div class="research-card">
-                    <img src="./images/faculty/project.jpg" alt="">
-                    <h4>Projects</h4>
-                    <p>Innovative projects funded by national and international organizations.</p>
+        </div>
+    </section>
+
+    <section class="faculty-facilities-section" id="facilities-section" style="background-color: #f5f5f5;">
+        <div class="container">
+            <h2 class="primary-heading text-5xl text-center">Our <span>Facilities</span></h2>
+            <div class="facilities-container">
+                <div class="facility">
+                    <div class="icon-box purple">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <p>LECTURE HALLS</p>
                 </div>
-            </div>
-            <!-- Patents -->
-            <div class="col-md-3 col-sm-6">
-                <div class="research-card">
-                    <img src="./images/faculty/patent.jpg" alt="">
-                    <h4>Patents</h4>
-                    <p>Several patents filed and granted for groundbreaking research and innovation.</p>
+            
+                <div class="facility">
+                    <div class="icon-box yellow">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <p>LIBRARY</p>
+                </div>
+            
+                <div class="facility">
+                    <div class="icon-box green">
+                        <i class="fa fa-desktop"></i>
+                    </div>
+                    <p>COMPUTER LAB</p>
+                </div>
+            
+                <div class="facility">
+                    <div class="icon-box cyan">
+                        <i class="fa fa-flask"></i>
+                    </div>
+                    <p>RESEARCH LAB</p>
+                </div>
+            
+                <div class="facility">
+                    <div class="icon-box pink">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <p>CAREER SUPPORT</p>
+                </div>
+            
+                <div class="facility">
+                    <div class="icon-box blue">
+                        <i class="fa fa-soccer-ball-o"></i>
+                    </div>
+                    <p>SPORTS CENTER</p>
+                </div>
+
+                <!-- New Facilities -->
+                <div class="facility">
+                    <div class="icon-box orange">
+                        <i class="fa fa-cutlery"></i>
+                    </div>
+                    <p>CAFETERIA</p>
+                </div>
+
+                <div class="facility">
+                    <div class="icon-box teal">
+                        <i class="fa fa-ambulance"></i>
+                    </div>
+                    <p>MEDICAL CENTER</p>
                 </div>
             </div>
         </div>
     </section>
-    
-    
 
+    <section class="alumni-section" id="alumni-section">
+        <div class="container">
+            <h2 class="primary-heading text-5xl text-center">Our <span>Alumni</span></h2>
+            <div class="swiper-container" id="faculty-alumni-slider">
+                <div class="swiper-wrapper">
+                    <!-- Alumni 1 -->
+                    <div class="swiper-slide">
+                        <div class="alumni-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Aniket Bhattacharya">
+                            </div>
+                            <div class="alumni-details">
+                                <h4>Dr. Aniket Bhattacharya</h4>
+                                <p class="country">India</p>
+                                <p class="position">Postdoctoral Fellow in the School of Sustainable Chemical, Biological, and Material Engineering at the University of Oklahoma, Norman campus</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Alumni 2 -->
+                    <div class="swiper-slide">
+                        <div class="alumni-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Ankita">
+                            </div>
+                            <div class="alumni-details">
+                                <h4>Dr. Ankita</h4>
+                                <p class="country">Nepal</p>
+                                <p class="position">Postdoctoral Fellow at Albert Einstein College of Medicine, New York, USA.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Alumni 3 -->
+                    <div class="swiper-slide">
+                        <div class="alumni-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Amit Kumar Mishra">
+                            </div>
+                            <div class="alumni-details">
+                                <h4>Dr. Amit Kumar Mishra</h4>
+                                <p class="country">India</p>
+                                <p class="position">Postdoctoral Fellow at Albert Einstein College of Medicine, New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Alumni 4 -->
+                    <div class="swiper-slide">
+                        <div class="alumni-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Md Babumia">
+                            </div>
+                            <div class="alumni-details">
+                                <h4>Dr. Md Babumia</h4>
+                                <p class="country">Bangladesh</p>
+                                <p class="position">Postdoctoral Fellow at Icahn School of Medicine at Mount Sinai, New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Alumni 5 -->
+                    <div class="swiper-slide">
+                        <div class="alumni-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Fauzia Parween">
+                            </div>
+                            <div class="alumni-details">
+                                <h4>Dr. Fauzia Parween</h4>
+                                <p class="country">India</p>
+                                <p class="position">Postdoctoral Fellow at University of Texas, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements-section" id="achievements-section">
+        <div class="container">
+            <h2 class="primary-heading text-5xl text-center">Our <span>Achievements</span></h2>
+            <div class="swiper-container" id="achievements-slider">
+                <div class="swiper-wrapper">
+                    <!-- Achievement 1 -->
+                    <div class="swiper-slide">
+                        <div class="achievement-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Aniket Bhattacharya">
+                            </div>
+                            <div class="achievement-details">
+                                <h4>Dr. Aniket Bhattacharya</h4>
+                                <p class="title">Breakthrough in Sustainable Materials</p>
+                                <p class="description">Awarded the 'Global Innovator in Sustainable Engineering' for pioneering research in eco-friendly materials at the University of Oklahoma.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Achievement 2 -->
+                    <div class="swiper-slide">
+                        <div class="achievement-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Ankita">
+                            </div>
+                            <div class="achievement-details">
+                                <h4>Dr. Ankita</h4>
+                                <p class="title">Advancement in Biomedical Research</p>
+                                <p class="description">Published groundbreaking research on cancer immunotherapy, earning recognition from the American Medical Association.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Achievement 3 -->
+                    <div class="swiper-slide">
+                        <div class="achievement-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Amit Kumar Mishra">
+                            </div>
+                            <div class="achievement-details">
+                                <h4>Dr. Amit Kumar Mishra</h4>
+                                <p class="title">AI in Medical Diagnostics</p>
+                                <p class="description">Developed an AI-based diagnostic tool at Albert Einstein College of Medicine, reducing diagnosis time for rare diseases by 40%.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Achievement 4 -->
+                    <div class="swiper-slide">
+                        <div class="achievement-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Md Babumia">
+                            </div>
+                            <div class="achievement-details">
+                                <h4>Dr. Md Babumia</h4>
+                                <p class="title">Leading Research in Neurotechnology</p>
+                                <p class="description">Recipient of the 'Excellence in Neuroscience' award for innovative work on brain-computer interfaces at Mount Sinai.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Achievement 5 -->
+                    <div class="swiper-slide">
+                        <div class="achievement-card">
+                            <div class="alumni-image">
+                                <img src="images/students.jpg" alt="Dr. Fauzia Parween">
+                            </div>
+                            <div class="achievement-details">
+                                <h4>Dr. Fauzia Parween</h4>
+                                <p class="title">Pioneering Work in Genetic Engineering</p>
+                                <p class="description">Led a research team at the University of Texas in developing CRISPR-based therapies for genetic disorders.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- footer section -->
     <footer>
@@ -492,6 +799,76 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tabWrapper = document.getElementById("fixed-tabs");
+            var tabOffset = tabWrapper.offsetTop;
+            var links = document.querySelectorAll(".fixed-tabs a");
+
+            // Sticky Navigation on Scroll
+            window.addEventListener("scroll", function () {
+                if (window.pageYOffset >= tabOffset) {
+                    tabWrapper.classList.add("fixed");
+                } else {
+                    tabWrapper.classList.remove("fixed");
+                }
+
+                // Active Section Highlighting
+                links.forEach(function (link) {
+                    var section = document.querySelector(link.getAttribute("href"));
+                    if (section) {
+                        var sectionTop = section.offsetTop - tabWrapper.offsetHeight;
+                        var sectionBottom = sectionTop + section.offsetHeight;
+
+                        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionBottom) {
+                            links.forEach(a => a.classList.remove("active"));
+                            link.classList.add("active");
+                        }
+                    }
+                });
+            });
+
+            // Smooth Scrolling Without CSS scroll-behavior
+            links.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var targetSection = document.querySelector(link.getAttribute("href"));
+                    if (targetSection) {
+                        var targetPosition = targetSection.offsetTop - tabWrapper.offsetHeight;
+                        smoothScrollTo(targetPosition, 800);
+                    }
+                });
+            });
+
+            function smoothScrollTo(target, duration) {
+                var startPosition = window.pageYOffset;
+                var distance = target - startPosition;
+                var startTime = null;
+
+                function animation(currentTime) {
+                    if (startTime === null) startTime = currentTime;
+                    var timeElapsed = currentTime - startTime;
+                    var scrollAmount = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+
+                    window.scrollTo(0, scrollAmount);
+
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(animation);
+                    }
+                }
+
+                function easeInOutQuad(t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return (c / 2) * t * t + b;
+                    t--;
+                    return (-c / 2) * (t * (t - 2) - 1) + b;
+                }
+
+                requestAnimationFrame(animation);
+            }
+        });
+
+    </script>
 </body>
 
 </html>

@@ -123,6 +123,14 @@
     color: var(--golden-yellow);
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .fixed-tabs {
@@ -136,6 +144,8 @@
         font-size: 14px;
     }
 }
+
+
 
 /* About Section Styling */
 .about-section {
@@ -267,6 +277,13 @@
 .research-container {
     text-align: center;
     padding: 40px 0;
+    background-image: url('../images/sau-campus.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(26, 26, 26, 0.689);
+    background-blend-mode: multiply;
+    color: white;
 }
 
 .research-card {
@@ -314,3 +331,225 @@
 .research-card:hover p {
     color: #fff;
 } */
+
+
+/* Event Card */
+
+/* Event Card Container */
+.faculty-events-section{
+    padding: 40px 0;
+}
+.faculty-event-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* max-width: 700px; */
+    width: 100%;
+}
+
+/* Date Box */
+.date-box {
+    background: #58c3ff;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 80px;
+}
+
+.date {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.month-year {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Event Details */
+.event-details {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+
+.event-details h4 {
+    color: #2b4863;
+    font-weight: bold;
+    margin: 0;
+}
+
+.location {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Learn More Button */
+.button-container {
+    flex-shrink: 0;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 8px 15px;
+    color: var(--golden-yellow);
+    border: 1px solid var(--golden-yellow);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background: var(--golden-yellow);
+    color: white;
+}
+
+
+/* Facilities Grid */
+.faculty-facilities-section{
+    padding: 40px 0;
+}
+
+.facilities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Individual Facility Box */
+.facility {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icon Box */
+.icon-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    font-size: 32px;
+    color: white;
+    background: var(--dark-blue);
+}
+
+/* Hover Effect */
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+/* Facility Text */
+.facility p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Icon Box Colors */
+/* .purple { background: #6a35b8; }
+.yellow { background: #f4c51c; }
+.green { background: #21c47b; }
+.cyan { background: #21c4c4; }
+.pink { background: #e83e8c; }
+.blue { background: #4054b2; } */
+
+
+
+/* Alumni Section */
+.alumni-section {
+    padding: 50px 0;
+}
+
+.alumni-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.alumni-details h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.alumni-details .country {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+.alumni-details .position {
+    font-size: 14px;
+    color: #555;
+}
+
+.achievements-section {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.achievement-details h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.achievement-details .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--golden-yellow);
+}
+
+.achievement-details .description {
+    font-size: 14px;
+    color: #555;
+}

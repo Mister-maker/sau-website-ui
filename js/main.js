@@ -137,6 +137,69 @@ var swiper = new Swiper('#faculty-member-slider', {
     },
 });
 
+var swiper = new Swiper('#faculty-events-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '#announcement-swiper-button-next',
+        prevEl: '#announcement-swiper-button-prev',
+    },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1024: { slidesPerView: 2 },
+        480: { slidesPerView: 1 }
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+});
+
+var swiper = new Swiper('#faculty-alumni-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '#announcement-swiper-button-next',
+        prevEl: '#announcement-swiper-button-prev',
+    },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1024: { slidesPerView: 2 },
+        480: { slidesPerView: 1 }
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+});
+
+var swiper = new Swiper('#achievements-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '#announcement-swiper-button-next',
+        prevEl: '#announcement-swiper-button-prev',
+    },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1024: { slidesPerView: 2 },
+        480: { slidesPerView: 1 }
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+});
+
 
 // Testimonial Section
 
