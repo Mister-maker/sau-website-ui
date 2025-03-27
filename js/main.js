@@ -115,6 +115,29 @@ var swiper = new Swiper('#sau-video-slider', {
 });
 
 
+// faculty Members slider section
+var swiper = new Swiper('#faculty-member-slider', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '#announcement-swiper-button-next',
+        prevEl: '#announcement-swiper-button-prev',
+    },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1024: { slidesPerView: 4 },
+        480: { slidesPerView: 1 }
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+});
+
+
 // Testimonial Section
 
 let currentTestimonialIndex = 0;
